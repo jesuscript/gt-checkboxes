@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Managed Ads Test A</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <script src="/javascripts/jquery-min.js" type="text/javascript">
+    </script>
+    <script src="/javascripts/application.js" type="text/javascript">
+    </script>
+  </head>
+  <body id="my-gumtree">
+    <div id="wrapper">
+      <div id="header"> <a href="#" id="brand"><img src="img/logo_gumtree.gif" alt="Gumtree logo" /></a></div>
+      <h1>My Gumtree</h1>
+      <div id="main">
+        <form action="" id="your-ads">
+          <table summary="Your listed adverts with advert statistics and priced listing options. Column header 'Featured Ads' has three sub-headings">
+            <thead>
+              <tr class="no-bborder">
+                <td colspan="2" class="select-advert"></td>
+                <th scope="col" class="views">Views</th>
+                <th scope="col" class="modified">Modified</th>
+                <th colspan="3" scope="colgroup" class="featured-ad">Featured Ad (days)</th>
+                <th scope="col" class="urgent">Urgent</th>
+                <th scope="col" class="homepage-spotlight">Homepage Spotlight</th>
+                <th scope="col" class="bump">Bump Up</th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+                <th scope="col" class="subhead"><span class="positioned">(3<span class="hidden"> days</span>)</span></th>
+                <th scope="col" class="subhead"><span class="positioned">(7<span class="hidden"> days</span>)</span></th>
+                <th scope="col" class="subhead"><span class="positioned">(15<span class="hidden"> days</span>)</span></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="global-checkboxes">
+                <td><input type="checkbox" id="delete-all" name="delete-all" />
+                  <label for="delete-all" class="hidden">Mark all adverts for deletion</label>
+                </td>
+                <td class="advert-summary"></td>
+                <td></td>
+                <td></td>
+                <td class="col_featured-ad"><input type="checkbox" id="feature-all-3" name="feature-all-3" />
+                  <label for="feature-all-3" class="hidden">Feature all ads for 3 days</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="feature-all-7" name="feature-all-7" />
+                  <label for="feature-all-7" class="hidden">Feature all ads for 7 days</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="feature-all-15" name="feature-all-15" />
+                  <label for="feature-all-15" class="hidden">Feature all ads for 15 days</label>
+		</td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent-all" name="urgent-all" />
+                  <label for="urgent-allhttps://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" class="hidden">Mark all ads as urgent</label>
+		</td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight-all" name="spotlight-all" />
+                  <label for="spotlight-all" class="hidden">Mark all ads for homepage spotlight</label>
+		</td>
+                <td class="col_ad-options"><input type="checkbox" id="bump-all" name="bump-all" />
+                  <label for="bump-all" class="hidden">Mark all ads for bump up</label></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" id="ad1" value="advert1" name="advert1" />
+                  <label for="ad1" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad1" value="featured3_ad1" name="featured_ad1" />
+                  <label for="featured3_ad1">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad1" value="featured7_ad1" name="featured_ad1" />
+                  <label for="featured7_ad1">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad1" value="featured15_ad1" name="featured_ad1" />
+                  <label for="featured15_ad1">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad1" value="urgent_ad1" name="ad-options_ad1" />
+                  <label for="urgent_ad1">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad1" value="spotlight_ad1" name="ad-options_ad1" />
+                  <label for="spotlight_ad1">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad1" value="bump_ad1" name="ad-options_ad1" />
+                  <label for="bump_ad1">&pound;2</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ad2" value="advert2" name="advert2" />
+                  <label for="ad2" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad2" value="featured3_ad2" name="featured_ad2" />
+                  <label for="featured3_ad2">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad2" value="featured7_ad2" name="featured_ad2" />
+                  <label for="featured7_ad2">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad2" value="featured15_ad2" name="featured_ad2" />
+                  <label for="featured15_ad2">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad2" value="urgent_ad2" name="ad-options_ad2" />
+                  <label for="urgent_ad2">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad2" value="spotlight_ad2" name="ad-options_ad2" />
+                  <label for="spotlight_ad2">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad2" value="bump_ad2" name="ad-options_ad2" />
+                  <label for="bump_ad2">&pound;2</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ad3" value="advert3" name="advert3" />
+                  <label for="ad3" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad3" value="featured3_ad3" name="featured_ad3" />
+                  <label for="featured3_ad3">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad3" value="featured7_ad3" name="featured_ad3" />
+                  <label for="featured7_ad3">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad3" value="featured15_ad3" name="featured_ad3" />
+                  <label for="featured15_ad3">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad3" value="urgent_ad3" name="ad-options_ad3" />
+                  <label for="urgent_ad3">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad3" value="spotlight_ad3" name="ad-options_ad3" />
+                  <label for="spotlight_ad3">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad3" value="bump_ad3" name="ad-options_ad3" />
+                  <label for="bump_ad3">&pound;2</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ad4" value="advert4" name="advert4" />
+                  <label for="ad4" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad4" value="featured3_ad4" name="featured_ad4" />
+                  <label for="featured3_ad4">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad4" value="featured7_ad4" name="featured_ad4" />
+                  <label for="featured7_ad4">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad4" value="featured15_ad4" name="featured_ad4" />
+                  <label for="featured15_ad4">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad4" value="urgent_ad4" name="ad-options_ad4" />
+                  <label for="urgent_ad4">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad4" value="spotlight_ad4" name="ad-options_ad4" />
+                  <label for="spotlight_ad4">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad4" value="bump_ad4" name="ad-options_ad4" />
+                  <label for="bump_ad4">&pound;2</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ad5" value="advert5" name="advert5" />
+                  <label for="ad5" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad5" value="featured3_ad5" name="featured_ad5" />
+                  <label for="featured3_ad5">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad5" value="featured7_ad5" name="featured_ad5" />
+                  <label for="featured7_ad5">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad5" value="featured15_ad5" name="featured_ad5" />
+                  <label for="featured15_ad5">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad5" value="urgent_ad5" name="ad-options_ad5" />
+                  <label for="urgent_ad5">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad5" value="spotlight_ad5" name="ad-options_ad5" />
+                  <label for="spotlight_ad5">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad5" value="bump_ad5" name="ad-options_ad5" />
+                  <label for="bump_ad5">&pound;2</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ad6" value="advert6" name="advert6" />
+                  <label for="ad6" class="hidden">Select advert: 2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</label>
+                </td>
+                <td class="advert-summary"><img src="img/thumbnail.jpg" alt="Thumbnail of advert main image" />
+                  <h2>2000 Mitsubishi Lancer Evo VI 2.0 
+                    Limited Edition 12,000 miles FSH</h2>
+                  <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li class="no-bg"><a href="#">Delete</a></li>
+                  </ul></td>
+                <td>56,432</td>
+                <td><span class="modified">1 hour ago</span><br /> <span class="ad-status">Live</span></td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured3_ad6" value="featured3_ad6" name="featured_ad6" />
+                  <label for="featured3_ad6">&pound;5</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured7_ad6" value="featured7_ad6" name="featured_ad6" />
+                  <label for="featured7_ad6">&pound;12</label>
+                </td>
+                <td class="col_featured-ad"><input type="checkbox" id="featured15_ad6" value="featured15_ad6" name="featured_ad6" />
+                  <label for="featured15_ad6">&pound;20</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="urgent_ad6" value="urgent_ad6" name="ad-options_ad6" />
+                  <label for="urgent_ad6">&pound;5</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="spotlight_ad6" value="spotlight_ad6" name="ad-options_ad6" />
+                  <label for="spotlight_ad6">&pound;25</label></td>
+                <td class="col_ad-options"><input type="checkbox" id="bump_ad6" value="bump_ad6" name="ad-options_ad6" />
+                  <label for="bump_ad6">&pound;2</label></td>
+              </tr>
+	      <tr>
+                <td colspan="10" class="running-total-container">&pound;<span id="running-total">0.00</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!--/main-->
+    </div>
+    <!--/wrapper-->
+  </body>
+</html>

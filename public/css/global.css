@@ -1,0 +1,121 @@
+/*===================================
+Managed Ads Test A
+=====================================
+
+=============REFERENCE===============
+1= RESETS & UNIVERSAL
+2= LAYOUT
+3= TYPOGRAPHY
+4= SECTION: YOUR ADS
+*/
+
+/*=========================
+1= RESETS & UNIVERSAL
+==========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body { line-height:1; font:62.5% Arial, Helvetica, sans-serif; color:#666; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none;}
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+label { cursor:pointer; vertical-align:middle; outline:0; }
+a img { border:0; text-decoration:none; }
+.hidden {
+	position:absolute;
+	top:-1000px;
+	left:0;
+	overflow:hidden;
+	width:0;
+	height:0;
+}
+.clear { clear:both; }
+.no-bg { background-image:none!important; }
+.no-bborder { border-bottom:0!important; }
+
+/*=========================
+2= LAYOUT
+==========================*/
+#my-gumtree { background:#fff url('../img/bg_body.gif') repeat-x; }
+#wrapper { width:950px; margin:0 auto; }
+#header { padding-bottom:30px; margin-bottom:22px; }
+#brand { display:block; width:99px; height:107px; margin:4px 0 0 30px; }
+#main { padding: 24px 10px 40px 20px; }
+ 
+/*=========================
+3= TYPOGRAPHY
+==========================*/
+#my-gumtree h1 {
+font:2.4em/1.0em Verdana, Arial, Helvetica, sans-serif; 
+color:black;
+padding:0 0 19px 30px;
+border-bottom:solid 1px #ccc;
+}
+.modified { font-size:.916em; }
+
+/*=========================
+4= SECTION: YOUR ADS
+==========================*/
+/*==== TABLE ====*/
+#your-ads { border:solid 10px #f1f1f1; font-size:1.2em; padding:12px 8px 45px; }
+#your-ads table { width:880px; position:relative; }
+#your-ads tr { border-bottom:dashed 1px #ccc; }
+
+#your-ads thead th, 
+#your-ads thead td { background-color:#fff; vertical-align:top; }
+#your-ads th, 
+#your-ads td { text-align:center; vertical-align:middle; padding:11px 4px }
+
+#col_featured-ad,
+.col_featured-ad { background-color:#ffd; width:32px;}
+#col_ad-options,
+.col_ad-options { background-color:#ffffc0; width:62px; }
+
+#your-ads td.select-advert { width:372px;}
+#your-ads th.views { width:82px; }
+#your-ads th.modified { width:72px; }
+#your-ads th.featured-ad { width:112px; }
+#your-ads th.urgent { width:62px; }
+#your-ads th.homepage-spotlight { width:62px; }
+#your-ads th.bump { width:62px; }
+
+#your-ads th { font-weight:bold; }
+#your-ads th.subhead { font-weight:normal!important; padding:0; }
+#your-ads th.subhead .positioned { position:relative; top:-22px; }
+.advert-summary img { float:left; margin:0 10px 0 0; }
+.advert-summary h2 { float:left; width:200px; text-align:left; }
+.advert-summary ul { float:left; width:200px; }
+.advert-summary li { float:left; padding-right:5px; margin-right:5px; color:#00547e; background:url('../img/bg_seperator.gif') 100% 40% no-repeat; }
+.advert-summary li a { color:#00547e; text-decoration:none; }
+.advert-summary li a:hover { text-decoration:underline; }
+.ad-status { font-weight:bold; color:#6bae48;}
+
+/*==== FORM ELEMENTS ====*/
+#your-ads label {display:block; margin-top:5px; }
+
+/*==== ORDER TOTAL ====*/
+#your-ads .running-total-container{	text-align:right; font-size:1.4em;}
+#your-ads .running-total-container{	text-align:right; font-weight:bold;}
+
