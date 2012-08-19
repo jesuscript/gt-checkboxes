@@ -3,14 +3,14 @@
     
     // only one "featured" checkbox can be checked at a time in a row:
     $(".col_featured-ad input[type=\"checkbox\"]").change(function(){
-      if($(this).is(":checked")){
-        var this_id = $(this).attr("id");
+      var this_id = $(this).attr("id");
 
+      if($(this).is(":checked")){
         $(this).parents("tr") // other featured boxes for this row:
           .find(".col_featured-ad input[type=\"checkbox\"]")
           .each(function(){
             if($(this).attr("id") !== this_id){
-              $(this).prop("checked", false);
+              $(this).prop("checked", false).trigger("change");
             }
           });
       }
@@ -40,8 +40,26 @@
           .prop("checked",is_checked)
           .trigger("change"); // prop()  doesn't trigger 'change' :(
       });
+    });
 
+    //managing the running total
+    $("input[type=\"checkbox\"]").click(function(){
+      var $running_tot = $("#running-total");
+      var running_tot = 0
 
+      $("input[type=\"checkbox\"]:checked").each(function(){
+        // it would probably be more reliable to use data attributes
+        // on checkboxes though
+        var this_amount = parseFloat($(this).parent()
+                                     .find("label")
+                                     .text()
+                                     .substr(1));
+        if(!isNaN(this_amount)){
+          running_tot += this_amount;
+        }
+      });
+                                                
+      $running_tot.text(running_tot.toFixed(2));
     });
   });
 })(jQuery);
