@@ -1,0 +1,13 @@
+To run (the easy way):
+
+1) Open <PATH_TO_THE_PROJECT_DIRECTORY>/offline_solution/index.html as a local file in your browser
+
+
+To run (a slightly more involved way):
+
+1) Install node: follow the instructions at http://howtonode.org/how-to-install-nodejs
+2) Install npm: follow the instructions at https://github.com/isaacs/npm
+3) cd into the root directory of the project
+4) Run "npm install" to install dependencies
+5) Start the app: node app.js
+6) Open localhost:3000 in your browser (or 10.0.2.2:3000 if running a VirtualBox)
